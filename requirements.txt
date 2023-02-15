@@ -1,0 +1,5 @@
+certifi==2022.12.7
+minio==7.1.13
+pyaml==21.10.1
+PyYAML==6.0
+urllib3==1.26.14
