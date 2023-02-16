@@ -1,3 +1,6 @@
+
+# TODO: change code
+
 MODEL_NOT_SERVED = {
     "id": 1,
     "type": "ModelNotServedError",
@@ -10,6 +13,12 @@ MODEL_NOT_EXIST = {
     "message": "model does not exist in MinIO bucket"
 }
 
+MODEL_NOT_DOWNLOADED = {
+    "id": 3,
+    "type": "ModelNotDownloadedError",
+    "message": "model not downloaded yet to torchserve model store"
+}
+
 
 class ModelRequestErrors():
     def __init__(self) -> None:
@@ -20,3 +29,6 @@ class ModelRequestErrors():
 
     def MNE(self):
         return MODEL_NOT_EXIST
+
+    def MND(self):
+        return MODEL_NOT_DOWNLOADED
